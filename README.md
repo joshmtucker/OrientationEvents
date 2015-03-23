@@ -75,7 +75,7 @@ variableName.smoothMotion = .5
 
 ## Example
 
-Download the <a href="https://github.com/joshmtucker/OrientationEvents/tree/master/ExampleOrientationEvents.framer">DeviceOrientationEvents.framer</a> project to see how to apply values. I used it to build a Facebook Paper-like pan on a photo.
+Download the <a href="https://github.com/joshmtucker/OrientationEvents/tree/master/ExampleOrientationEvents.framer">ExampleDeviceOrientationEvents.framer</a> project to see how to apply values. I used it to build a Facebook Paper-like pan on a photo.
 
 ## Questions?
 
