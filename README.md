@@ -43,6 +43,13 @@ variableName.motion.gravZ # Acceleration along Z axis including gravity
 
 variableName.motion.rotationRate # Rate of change on all axes. Expressed in degrees per second
 variableName.motion.interval # Interval of time in milliseconds that data is obtained from device
+
+###
+NOTE
+
+While the values are updated frequently inside the module, you will need to use a setTimeout/setInterval (or build-in for Framer: Utils.delay/Utils.interval) to grab updated values in your project. See ExampleDeviceOrientationEvents.framer to see how I implemented an interval to grab values.
+
+Potentially extending Framer.Events for better support is on my to-do list (something I need to learn).
 ```
 
 ## Smoothing
