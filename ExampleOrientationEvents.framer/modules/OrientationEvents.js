@@ -43,9 +43,11 @@ exports.OrientationEvents = function() {
         window.addEventListener("deviceorientation", _orientation);
         return print("Device motion events are not support on this device.");
       case !(window.DeviceMotionEvent && !window.DeviceOrientationEvent):
+        window.addEventListener("devicemotion", motion);
         return print("Device orientation events are not suported on this device");
       case !(window.DeviceOrientationEvent && window.DeviceMotionEvent):
-        return window.addEventListener("deviceorientation", _orientation);
+        window.addEventListener("deviceorientation", _orientation);
+        return window.addEventListener("devicemotion", motion);
       default:
         return print("Device orientation and motion events are not support on this device.");
     }
@@ -60,7 +62,7 @@ _motion = function(event) {
   filteredGravX = (event.accelerationIncludingGravity.x * exports.smoothMotion) + (filteredGravX * (1 - exports.smoothMotion));
   filteredGravY = (event.accelerationIncludingGravity.y * exports.smoothMotion) + (filteredGravY * (1 - exports.smoothMotion));
   filteredGravZ = (event.accelerationIncludingGravity.Z * exports.smoothMotion) + (filteredGravZ * (1 - exports.smoothMotion));
-  return motion = {
+  motion = {
     x: filteredX,
     y: filteredY,
     z: filteredZ,
@@ -70,6 +72,7 @@ _motion = function(event) {
     rotationRate: event.rotationRate,
     interval: event.interval
   };
+  return motion;
 };
 
 _orientation = function(event) {
@@ -79,7 +82,8 @@ _orientation = function(event) {
   exports.orientation = {
     alpha: filteredAlpha,
     beta: filteredBeta,
-    gamma: filteredGamma
+    gamma: filteredGamma,
+    absolute: event.absolute
   };
   return orientation;
 };

@@ -41,12 +41,12 @@ exports.OrientationEvents = ->
 
 			print "Device motion events are not support on this device."
 		when window.DeviceMotionEvent && !(window.DeviceOrientationEvent)
-			#window.addEventListener "devicemotion", _calculateMotion
+			window.addEventListener "devicemotion", motion
 
 			print "Device orientation events are not suported on this device"
 		when window.DeviceOrientationEvent && window.DeviceMotionEvent
 			window.addEventListener "deviceorientation", _orientation
-			#window.addEventListener "devicemotion", _calculateMotion
+			window.addEventListener "devicemotion", motion
 		else 
 			print "Device orientation and motion events are not support on this device."
 
@@ -61,7 +61,6 @@ _motion = (event) ->
 	filteredGravY = (event.accelerationIncludingGravity.y * exports.smoothMotion) + (filteredGravY * (1-exports.smoothMotion))
 	filteredGravZ = (event.accelerationIncludingGravity.Z * exports.smoothMotion) + (filteredGravZ * (1-exports.smoothMotion))
 
-
 	motion = 
 		x: filteredX
 		y: filteredY
@@ -72,6 +71,8 @@ _motion = (event) ->
 		rotationRate: event.rotationRate
 		interval: event.interval
 
+	return motion
+
 _orientation = (event) ->
 	filteredAlpha = (event.alpha * exports.smoothOrientation) + (filteredAlpha * (1- exports.smoothOrientation))
 	filteredBeta = (event.beta * exports.smoothOrientation) + (filteredBeta * (1- exports.smoothOrientation))
@@ -81,6 +82,7 @@ _orientation = (event) ->
 		alpha: filteredAlpha
 		beta: filteredBeta
 		gamma: filteredGamma
+		absolute: event.absolute
 
 
 	return orientation
