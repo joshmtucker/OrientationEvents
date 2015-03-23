@@ -54,13 +54,13 @@ The way the orientation and motion event properties are computed (with the excep
 
 > filteredAlpha = (event.alpha * exports.smoothOrientation) + (filteredAlpha * (1-exports.smoothing)
 
-To set smoothing for orientation and motion event values, use the following:
+Set smoothing for orientation and motion event values using the following code.
 
 ```coffee
 # Values set should be between 0 and 1. The higher the value, the less smooth it is. 
 # Setting to 0 or 1 outputs raw values
 # Setting smoothing values affects all properties for each respective variable (documented above).
-# Defaults for both are set to 1
+# If not set in your Framer project, defaults for both are = 1
 
 variableName.smoothOrientation = 1
 variableName.smoothMotion = .5
@@ -68,7 +68,7 @@ variableName.smoothMotion = .5
 
 ## Example
 
-Download the DeviceOrientationEvents.framer project to see how to apply values. I used it to build a Facebook Paper-like pan on a photo.
+Download the <a href="https://github.com/joshmtucker/OrientationEvents/tree/master/DeviceOrientationEvents.framer">DeviceOrientationEvents.framer</a> project to see how to apply values. I used it to build a Facebook Paper-like pan on a photo.
 
 ## Questions?
 
