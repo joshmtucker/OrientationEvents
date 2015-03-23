@@ -72,6 +72,6 @@ Download the DeviceOrientationEvents.framer project to see how to apply values. 
 
 ## Questions?
 
-I am available here on GitHub, the <a href="https://www.facebook.com/groups/framerjs/">FramerJS Facebook Group</a>, and <a href="https://twitter.com/joshmtucker</a>. 
+I am available here on GitHub, the <a href="https://www.facebook.com/groups/framerjs/">FramerJS Facebook Group</a>, and <a href="https://www.twitter.com/joshmtucker">Twitter</a>.
 
 
