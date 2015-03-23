@@ -50,7 +50,7 @@ Orientation and motion values are quite jittery in raw form. If you wish to smoo
 
 The way the orientation and motion event properties are computed (with the exception of .absolute, .rotationRate, and .interval) is as follows:
 
-> Let's use variable.orientation.alpha (for example)
+> Let's use variable.orientation.alpha (for example). Each property for orientation and motion are set similarly.
 
 > filteredAlpha = (event.alpha * exports.smoothOrientation) + (filteredAlpha * (1-exports.smoothing)
 
