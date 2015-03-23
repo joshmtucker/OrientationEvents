@@ -1,7 +1,7 @@
 # OrientationEvents
 Handle device orientation events with Framer Studio. **To SEE and USE values, you must run your prototype on a mobile device that supports device orientation events.**
 
-Properties were taken from <a href="https://developer.mozilla.org/en-US/docs/Web/Events/deviceorientation">deviceorientation</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Events/devicemotion">devicemotion</a>. View the <a href="http://www.w3.org/TR/orientation-event/#devicemotion">DeviceOrientationEvents Event Specification</a> for full source.
+Code was applied from <a href="https://developer.mozilla.org/en-US/docs/Web/Events/deviceorientation">deviceorientation</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Events/devicemotion">devicemotion</a>. View the <a href="http://www.w3.org/TR/orientation-event/#devicemotion">DeviceOrientationEvents Event Specification</a> for full source.
 
 # Usage
 
@@ -72,6 +72,6 @@ Download the DeviceOrientationEvents.framer project to see how to apply values. 
 
 ## Questions?
 
-I am available here on GitHub, the <a href="https://www.facebook.com/groups/framerjs/">FramerJS Facebook Group</a>, and <a href="http://twitter.com/joshmtuckerTwitter</a>. 
+I am available here on GitHub, the <a href="https://www.facebook.com/groups/framerjs/">FramerJS Facebook Group</a>, and <a href="http://twitter.com/joshmtucker>Twitter</a>. 
 
 
