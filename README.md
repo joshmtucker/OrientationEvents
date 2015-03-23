@@ -41,7 +41,7 @@ variableName.motion.gravX # Acceleration along X axis including gravity
 variableName.motion.gravY # Acceleration along Y axis including gravity
 variableName.motion.gravZ # Acceleration along Z axis including gravity
 
-variableName.motion.rotationRate # Rate of change on all axises. Expressed in degrees per second
+variableName.motion.rotationRate # Rate of change on all axes. Expressed in degrees per second
 variableName.motion.interval # Interval of time in milliseconds that data is obtained from device
 ```
 
@@ -72,6 +72,6 @@ Download the DeviceOrientationEvents.framer project to see how to apply values. 
 
 ## Questions?
 
-I am available here on GitHub, the <a href="https://www.facebook.com/groups/framerjs/">FramerJS Facebook Group</a>, and <a href="http://twitter.com/joshmtucker>Twitter</a>. 
+I am available here on GitHub, the <a href="https://www.facebook.com/groups/framerjs/">FramerJS Facebook Group</a>, and <a href="https://twitter.com/joshmtucker</a>. 
 
 
