@@ -41,12 +41,12 @@ exports.OrientationEvents = ->
 
 			print "Device motion events are not support on this device."
 		when window.DeviceMotionEvent && !(window.DeviceOrientationEvent)
-			window.addEventListener "devicemotion", motion
+			window.addEventListener "devicemotion", _motion
 
 			print "Device orientation events are not suported on this device"
 		when window.DeviceOrientationEvent && window.DeviceMotionEvent
 			window.addEventListener "deviceorientation", _orientation
-			window.addEventListener "devicemotion", motion
+			window.addEventListener "devicemotion", _motion
 		else 
 			print "Device orientation and motion events are not support on this device."
 
