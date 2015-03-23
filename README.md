@@ -11,8 +11,8 @@ Put the OrientationEvents.coffee file in the /modules folder inside your Framer 
 variableName = require "OrientationEvents"
 ```
 
-### Initiate
-Setup event listeners for device orientation and motion.
+### Setup
+Add event listeners for device orientation and motion.
 
 ```coffee
 variableName.OrientationEvents()
