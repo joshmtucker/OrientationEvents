@@ -1,5 +1,5 @@
 # OrientationEvents
-Handle device orientation events with Framer Studio. **To SEE and USE values, you must run your prototype on a mobile device that supports device orientation events.**
+Handle device orientation events with Framer Studio. **To SEE and USE values, you must run your prototype in a browser or on a device that supports device orientation events.**
 
 Code was applied from <a href="https://developer.mozilla.org/en-US/docs/Web/Events/deviceorientation">deviceorientation</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Events/devicemotion">devicemotion</a>. View the <a href="http://www.w3.org/TR/orientation-event/#devicemotion">DeviceOrientationEvents Event Specification</a> for full source.
 
