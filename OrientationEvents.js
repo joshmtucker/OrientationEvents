@@ -61,7 +61,7 @@ _motion = function(event) {
   filteredZ = (event.acceleration.z * exports.smoothMotion) + (filteredZ * (1 - exports.smoothMotion));
   filteredGravX = (event.accelerationIncludingGravity.x * exports.smoothMotion) + (filteredGravX * (1 - exports.smoothMotion));
   filteredGravY = (event.accelerationIncludingGravity.y * exports.smoothMotion) + (filteredGravY * (1 - exports.smoothMotion));
-  filteredGravZ = (event.accelerationIncludingGravity.Z * exports.smoothMotion) + (filteredGravZ * (1 - exports.smoothMotion));
+  filteredGravZ = (event.accelerationIncludingGravity.z * exports.smoothMotion) + (filteredGravZ * (1 - exports.smoothMotion));
   motion = {
     x: filteredX,
     y: filteredY,
