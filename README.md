@@ -1,6 +1,10 @@
 # OrientationEvents
 Handle device orientation events with Framer Studio. **To SEE and USE values, you must run your prototype in a browser or on a device that supports device orientation events.**
 
+![](http://f.cl.ly/items/0w2m1m1z0z1l0a0H3K3O/OrientationEvents.gif)
+
+*Example of device rotation to reveal larger image, included in repo*
+
 Code was applied from <a href="https://developer.mozilla.org/en-US/docs/Web/Events/deviceorientation">deviceorientation</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Events/devicemotion">devicemotion</a>. View the <a href="http://www.w3.org/TR/orientation-event/#devicemotion">DeviceOrientationEvents Event Specification</a> for full source.
 
 # Usage
