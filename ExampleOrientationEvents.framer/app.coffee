@@ -22,7 +22,7 @@ module.smoothOrientation = .35
 # Just so it constantly print NaN when in Framer Studio (and not running from mobile device)
 if Utils.isMobile()
 	Utils.interval .1, ->
-		gamma = module.orientation.gamma
+		gamma = module.orientation.gamma if module.orientation.gamma?
 		
 		wallpaper.animate
 			properties:

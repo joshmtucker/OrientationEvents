@@ -71,7 +71,7 @@ _motion = (event) ->
 		rotationRate: event.rotationRate
 		interval: event.interval
 
-	return motion
+	return motion if motion?
 
 _orientation = (event) ->
 	filteredAlpha = (event.alpha * exports.smoothOrientation) + (filteredAlpha * (1- exports.smoothOrientation))
@@ -85,5 +85,5 @@ _orientation = (event) ->
 		absolute: event.absolute
 
 
-	return orientation
+	return orientation if orientation?
 
