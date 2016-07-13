@@ -48,7 +48,7 @@ exports.OrientationEvents = ->
 			window.addEventListener "deviceorientation", _orientation
 			window.addEventListener "devicemotion", _motion
 		else 
-			print "Device orientation and motion events are not support on this device."
+			console.warn('Device orientation and motion events are not support on this device.')
 
 # –––– PRIVATE
 
@@ -83,7 +83,6 @@ _orientation = (event) ->
 		beta: filteredBeta
 		gamma: filteredGamma
 		absolute: event.absolute
-
 
 	return orientation if orientation?
 
